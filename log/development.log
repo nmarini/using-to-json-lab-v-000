@@ -860,3 +860,31 @@ Processing by ProductsController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.3ms)
+
+
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/2.json" for 67.189.250.128 at 2019-06-28 19:21:15 +0000
+Cannot render console from 67.189.250.128! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/products/1" for 67.189.250.128 at 2019-06-28 19:21:15 +0000
+Cannot render console from 67.189.250.128! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 0.1ms)
+
+
